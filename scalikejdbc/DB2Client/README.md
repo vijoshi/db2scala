@@ -1,0 +1,1 @@
+# [scalikejdbc](http://scalikejdbc.org/) based implementation of a DB2 Client application

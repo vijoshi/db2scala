@@ -1,0 +1,1 @@
+# JDBC API based implementation of a DB2 Client application
