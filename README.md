@@ -11,7 +11,7 @@ Three sample applications, using three different approaches are included:
 
 ## Sample application requirements
 
-* Scala language version  2.11.6
+* [Scala language](http://www.scala-lang.org/) version 2.11.6
 * Scala *Simple Build Tool* [sbt](http://www.scala-sbt.org/) version 0.13.8
 * IBM Data Server Driver for JDBC and SQLJ (any version)
 
@@ -23,9 +23,32 @@ The sample applications are structured basd on the the [sbt](http://www.scala-sb
 
 To run the sample applications you need to provide the IBM Data Server Driver for JDBC and SQLJ in the `lib/` directory for each `DB2Client/` application. 
 
-The IBM Data Server Driver for JDBC and SQLJ comes packaged as a single jar file: db2jcc.jar for JDBC 3.0 and db2jcc4.jar for JDBC 4.0. This jar file needs to be placed in the `lib/` directory to run the application using:
-
-    sbt run
+The IBM Data Server Driver for JDBC and SQLJ comes packaged as a single jar file: db2jcc.jar for JDBC 3.0 and db2jcc4.jar for JDBC 4.0. This jar file needs to be placed in the `lib/` directory. 
 
 You can obtain the driver jar file from an existing DB2 installation, for example on a DB2 for Linux, Unix and Windows it is present in `sqllib/java` directory. Alternately one can obtain the driver from the IBM Data Server Driver for JDBC and SQLJ (JCC Driver) download location provided  [here](http://www-01.ibm.com/software/data/db2/linux-unix-windows/downloads.html).
+
+To run the applications issue:
+    
+* application with Anorm implementation
+
+```sh
+    $ chdir db2scala/anorm/DB2Client
+    $ sbt run
+```    
+
+* application with JDBC implementation
+
+```sh
+    $ chdir db2scala/jdbc/DB2Client
+    $ sbt run
+```     
+
+* application with scalikejdbc implementation 
+
+```sh
+    $ chdir db2scala/scalikejdbc/DB2Client
+    $ sbt run
+``` 
+
+    
 
