@@ -12,7 +12,7 @@ Three sample applications, using three different approaches are included:
 ## Sample application requirements
 
 * Scala language version  2.11.6
-* Application Projects based on the Scala *Simple Build Tool* [sbt](http://www.scala-sbt.org/) version 0.13.8
+* Scala *Simple Build Tool* [sbt](http://www.scala-sbt.org/) version 0.13.8
 * IBM Data Server Driver for JDBC and SQLJ (any version)
 
 ## Sample application structure
