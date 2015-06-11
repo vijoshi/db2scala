@@ -17,13 +17,11 @@ Three sample applications, using three different approaches are included:
 
 ## Sample application structure
 
-The sample applications are structured basd on the the [sbt](http://www.scala-sbt.org/) project structure. There are three applications, each rooted in its respective `DB2Client/` directory. As mentioned ealrier these are: `anorm/DB2Client/`, `jdbc/DB2Client/` and `scalikejdbc/DB2Client/`. 
+The sample applications are structured based on the the [sbt](http://www.scala-sbt.org/) project structure. There are three applications, each rooted in its respective `DB2Client/` directory. These are: `anorm/DB2Client/`, `jdbc/DB2Client/` and `scalikejdbc/DB2Client/`. 
 
 ## The IBM Data Server Driver for JDBC and SQLJ
 
-To run the sample applications you need to provide the IBM Data Server Driver for JDBC and SQLJ in the `lib/` directory for each `DB2Client/` application. 
-
-The IBM Data Server Driver for JDBC and SQLJ comes packaged as a single jar file: db2jcc.jar for JDBC 3.0 and db2jcc4.jar for JDBC 4.0. This jar file needs to be placed in the `lib/` directory. 
+The IBM Data Server Driver for JDBC and SQLJ comes packaged as a single jar file: db2jcc.jar for JDBC 3.0 and db2jcc4.jar for JDBC 4.0. To run the sample applications you need to place the driver jar in the `lib/` directory for each `DB2Client/` application. 
 
 You can obtain the driver jar file from an existing DB2 installation, for example on a DB2 for Linux, Unix and Windows it is present in `sqllib/java` directory. Alternately one can obtain the driver from the IBM Data Server Driver for JDBC and SQLJ (JCC Driver) download location provided  [here](http://www-01.ibm.com/software/data/db2/linux-unix-windows/downloads.html).
 
